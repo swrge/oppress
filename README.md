@@ -3,6 +3,8 @@
 chainable higher-order functions for `std/options` and result types.
 
 ```nim
+import oppress
+
 type str = string     
 
 proc test(x: string): Option[string] = some ("hey, " & x)
