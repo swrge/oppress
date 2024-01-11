@@ -3,13 +3,12 @@
 chainable higher-order functions for `std/options` and result types.
 
 ```nim
-import oppress
+import oppress/options
 
 type str = string     
 
 proc test(x: string): Option[string] = some ("hey, " & x)
 
-##### options #####
 none(string)
 .and_then(test)
 .or_else(() => some "stranger")

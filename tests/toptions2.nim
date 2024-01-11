@@ -1,4 +1,4 @@
-import ../src/oppress
+import ../src/oppress/options
 
 type str = string     
 
